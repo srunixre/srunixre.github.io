@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srunix R.E. - Remastered Version</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"><path fill="%23ddd" d="M-1-1h2v2h-2zM1 1h2v2h-2z"/></svg>');
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(to bottom, #4b6cb7, #3a56a0);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #2c4377;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #2c4377;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .sidebar {
+            float: left;
+            width: 180px;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-right: 1px solid #ddd;
+            min-height: 500px;
+        }
+
+        .main-content {
+            margin-left: 210px;
+            padding: 15px;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border: 1px solid #ddd;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            color: #333;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        a {
+            color: #3a56a0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(to bottom, #5a7bc8, #3a56a0);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 3px;
+            text-decoration: none;
+            border: 1px solid #2c4377;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .button:hover {
+            background: linear-gradient(to bottom, #6b8cda, #4b67b0);
+            text-decoration: none;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .breadcrumb {
+            padding: 8px 15px;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+            font-size: 13px;
+        }
+
+        .breadcrumb a {
+            color: #3a56a0;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-menu li {
+            margin-bottom: 5px;
+        }
+
+        .sidebar-menu a {
+            display: block;
+            padding: 5px 8px;
+            background-color: #eaeaea;
+            border-radius: 3px;
+            color: #333;
+        }
+
+        .sidebar-menu a:hover {
+            background-color: #ddd;
+            text-decoration: none;
+        }
+
+        .windows-theme {
+            background: linear-gradient(to bottom, #0078d7, #004e8c);
+            border-bottom: 4px solid #003366;
+        }
+
+        .windows-theme h1 {
+            color: white;
+        }
+
+        @media (max-width: 850px) {
+            .container {
+                width: 95%;
+            }
+            .sidebar {
+                float: none;
+                width: auto;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                min-height: auto;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <script>
+        if (navigator.userAgent.indexOf('Windows') !== -1) {
+            document.querySelector('header').classList.add('windows-theme');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Srunix R.E. - Remastered Version</h1>
+        </header>
+
+        <div class="breadcrumb">
+            <a href="#">Home</a> &raquo; About Srunix R.E.
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#main">About Srunix R.E.</a></li>
+                    <li><a href="#history">Project History</a></li>
+                    <li><a href="#development">Contribute</a></li>
+                    <li><a href="#iso">Build Instructions</a></li>
+                    <li><a href="https://www.donationalerts.com/r/srunix" target="_blank">Donate</a></li>
+                </ul>
+            </div>
+
+            <div class="main-content">
+                <div id="main">
+                    <h2>About Srunix R.E.</h2>
+                    <p>Srunix R.E. is a remastered version of the original Srunix operating system. It's an open multi-user Unix-like system that has been completely rebuilt from the ground up while maintaining the spirit of the original.</p>
+                    <p>The system features:</p>
+                    <ul>
+                        <li>Custom bkFS filesystem (reinterpretation of UFS)</li>
+                        <li>Traditional Unix login system</li>
+                        <li>Full multitasking capabilities</li>
+                        <li>TTY-based interface</li>
+                        <li>Compatibility with SUS standards</li>
+                    </ul>
+                    <p>While Srunix R.E. isn't officially Unix-certified, it maintains close compatibility with Unix standards. Currently, the system lacks native disk partitioning tools but can be installed using Linux or BSD LiveCD environments.</p>
+                </div>
+
+                <div id="history">
+                    <h2>Project History</h2>
+                    <p>The original Srunix was created by Fedor Shimor as a kernel for YobaOS, designed for specialized typewriter computers. After years of dormancy, the Srunix R.E. project began in 2022 as a complete remaster for modern x86_64 systems.</p>
+                    <p>Current system requirements:</p>
+                    <ul>
+                        <li>x86_64 architecture</li>
+                        <li>VGA graphics mode</li>
+                        <li>Legacy BIOS (UEFI not yet supported)</li>
+                    </ul>
+                    <p>The original Srunix source code has been lost to time, making Srunix R.E. a from-scratch reimplementation based on documentation and specifications.</p>
+                </div>
+
+                <div id="development">
+                    <h2>Contribute to Development</h2>
+                    <p>Srunix R.E. is developed under the BSD 3.0 license. We welcome contributions from developers of all skill levels.</p>
+                    <p>Contact the main developer at: <a href="mailto:srunix@yandex.ru">srunix@yandex.ru</a></p>
+                    <p>Financial contributions help support the project's infrastructure:</p>
+                    <p><a href="https://www.donationalerts.com/r/srunix" target="_blank" class="button">Donate via DonationAlerts</a></p>
+                </div>
+
+                <div id="iso">
+                    <h2>Build Instructions</h2>
+                    <p>To compile Srunix R.E. from source, first install dependencies:</p>
+                    <pre><code>sudo apt install nasm gcc binutils grub2 xorriso make</code></pre>
+                    <p>Then build using either:</p>
+                    <pre><code>./make  # Bash script version</code></pre>
+                    <p>or</p>
+                    <pre><code>make    # Standard make version</code></pre>
+                    <p>Run in QEMU with:</p>
+                    <pre><code>qemu-system-x86_64 -boot d -cdrom srunix.iso</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Srunix R.E. is distributed under BSD 3.0 License | © 2022-2023 Srunix Development Team</p>
+        </footer>
+    </div>
+</body>
+</html>
