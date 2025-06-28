@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srunix R.E. - Community Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/forum.js" defer></script>
+    <script>
+        if (navigator.userAgent.indexOf('Windows') !== -1) {
+            document.querySelector('header').classList.add('windows-theme');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Srunix R.E. - Community Forum</h1>
+        </header>
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &raquo; Forum
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="versions.html">Versions</a></li>
+                    <li><a href="#general">General Discussion</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#development">Development</a></li>
+                    <li><a href="https://www.donationalerts.com/r/srunix" target="_blank">Donate</a></li>
+                </ul>
+            </div>
+
+            <div class="main-content">
+                <div id="forum-content">
+                    <h2>General Discussion</h2>
+                    <div id="posts-container">
+                        <!-- Posts will be loaded here by JavaScript -->
+                    </div>
+
+                    <div id="new-post-form">
+                        <h3>Create New Post</h3>
+                        <input type="text" id="post-author" placeholder="Your name" required>
+                        <input type="text" id="post-title" placeholder="Post title" required>
+                        <textarea id="post-content" placeholder="Your message" required></textarea>
+                        <button id="submit-post" class="button">Submit Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Srunix R.E. is distributed under BSD 3.0 License | © 2022-2023 Srunix Development Team</p>
+        </footer>
+    </div>
+</body>
+</html>
