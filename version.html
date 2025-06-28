@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srunix R.E. - Versions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (navigator.userAgent.indexOf('Windows') !== -1) {
+            document.querySelector('header').classList.add('windows-theme');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Srunix R.E. - Version History</h1>
+        </header>
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &raquo; Versions
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="versions.html">Versions</a></li>
+                    <li><a href="#current">Current Version</a></li>
+                    <li><a href="#previous">Previous Versions</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="https://www.donationalerts.com/r/srunix" target="_blank">Donate</a></li>
+                </ul>
+            </div>
+
+            <div class="main-content">
+                <div id="current">
+                    <h2>Current Stable Version</h2>
+                    <div class="version-card">
+                        <h3>Srunix R.E. 1.2.0 "Stable"</h3>
+                        <div class="version-meta">Released: June 15, 2023</div>
+                        <p>This version includes significant improvements to system stability and hardware compatibility.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Improved filesystem performance</li>
+                            <li>Added basic networking stack</li>
+                            <li>Fixed memory management issues</li>
+                            <li>New built-in text editor</li>
+                        </ul>
+                        <p><a href="#" class="button">Download ISO</a> <a href="#" class="button">Release Notes</a></p>
+                    </div>
+                </div>
+
+                <div id="previous">
+                    <h2>Previous Versions</h2>
+                    <div class="version-card">
+                        <h3>Srunix R.E. 1.1.0</h3>
+                        <div class="version-meta">Released: March 10, 2023</div>
+                        <p>First stable release with complete core utilities.</p>
+                        <p><a href="#" class="button">Download</a></p>
+                    </div>
+
+                    <div class="version-card">
+                        <h3>Srunix R.E. 1.0.0 Beta</h3>
+                        <div class="version-meta">Released: December 5, 2022</div>
+                        <p>Initial public beta release with basic functionality.</p>
+                        <p><a href="#" class="button">Download</a></p>
+                    </div>
+
+                    <div class="version-card">
+                        <h3>Srunix R.E. 0.9.0 Alpha</h3>
+                        <div class="version-meta">Released: August 20, 2022</div>
+                        <p>First public alpha release for testing purposes.</p>
+                        <p><a href="#" class="button">Download</a></p>
+                    </div>
+                </div>
+
+                <div id="roadmap">
+                    <h2>Development Roadmap</h2>
+                    <h3>Planned for version 1.3.0</h3>
+                    <ul>
+                        <li>Basic UEFI support</li>
+                        <li>Improved networking capabilities</li>
+                        <li>Package management system</li>
+                    </ul>
+
+                    <h3>Future Goals</h3>
+                    <ul>
+                        <li>Graphical mode support</li>
+                        <li>ARM architecture port</li>
+                        <li>Official POSIX certification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Srunix R.E. is distributed under BSD 3.0 License | © 2022-2023 Srunix Development Team</p>
+        </footer>
+    </div>
+</body>
+</html>
