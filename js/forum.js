@@ -9,19 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 content: "This is the official forum for Srunix R.E. discussions. Feel free to ask questions, share ideas, or report issues."
             },
             {
-                id: 2,
-                title: "Installation issues with 1.2.0",
-                author: "NewUser",
-                date: new Date(Date.now() - 86400000).toISOString(),
-                content: "I'm having trouble installing Srunix R.E. on my old laptop. The installer doesn't recognize my hard drive. Any suggestions?"
-            },
-            {
-                id: 3,
-                title: "Feature request: Package manager",
-                author: "DevContributor",
-                date: new Date(Date.now() - 172800000).toISOString(),
-                content: "I think Srunix would benefit greatly from a simple package manager. Maybe something like pkgsrc could be ported?"
-            }
         ];
         localStorage.setItem('forumPosts', JSON.stringify(initialPosts));
     }
